@@ -1,0 +1,21 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Patrick's Blog
+tagline:          'Stuff'
+baseurl:          /
+
+author:
+  name:           'Patrick Louys'
+  url:            https://github.com/PatrickLouys
+
+gems: [jekyll-paginate]
+paginate:         5
+paginate_path: "page:num"
+
+
