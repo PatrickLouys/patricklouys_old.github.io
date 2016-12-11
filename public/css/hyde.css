@@ -247,3 +247,9 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.footer {
+    background-color: rgba(63, 93, 141, 0.31);
+    padding: 1.5em;
+}
+}
