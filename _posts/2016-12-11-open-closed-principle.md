@@ -219,7 +219,7 @@ final class AggregatorLogger implements Logger
 
     public function add(Logger $logger) : void
     {
-        $this->loggers = $logger;
+        $this->loggers[] = $logger;
     }
 
     public function log(string $message) : void
