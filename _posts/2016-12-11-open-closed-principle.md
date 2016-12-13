@@ -90,7 +90,7 @@ class EmailAndFilesystemLogger extends FilesystemLogger implements Logger
 }
 ```
 
-Chances that you have seen code like that before. If something changes in the base class, all the child classes break. Clearly not a good way to write maintainable code. If you want to annoy your coworkers even more, add multiple levels of inheritance.
+Chances are that you have seen code like that before. If something changes in the base class, all the child classes break. Clearly not a good way to write maintainable code. If you want to annoy your coworkers even more, add multiple levels of inheritance.
 
 This can often be seen in frameworks where they use some form of a `BaseController`. They put the most commonly used things in the base controller (templating, session, ...) and then only add additional dependencies in the specific controllers.
 
