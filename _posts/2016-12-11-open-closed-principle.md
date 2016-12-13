@@ -94,7 +94,7 @@ Chances that you have seen code like that before. If something changes in the ba
 
 This can often be seen in frameworks where they use some form of a `BaseController`. They put the most commonly used things in the base controller (templating, session, ...) and then only add additional dependencies in the specific controllers.
 
-Then one day you try to add something new to the base controller and everything breaks down. So they came up with a solution: they injected the dependency injection controller into the base controller.
+Then one day you try to add something new to the base controller and everything breaks down. So they came up with a solution: they injected the dependency injection container into the base controller.
 
 By injecting a dependency injection container they create a service locator. A single class that provides access to a lot of other classes.
 
