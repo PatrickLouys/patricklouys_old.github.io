@@ -12,7 +12,6 @@ So what happened?
 To get the last 3 months, I wrote a very simple method as you can see below:
 
 ```php
-
 private function getLastMonths(int $monthCount): array
 {
     $months = [];
