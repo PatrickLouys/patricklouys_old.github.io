@@ -9,7 +9,7 @@ I am working on a small webapp to manage my BJJ academy and today I noticed some
 
 So what happened?
 
-To get the last 3 months, I wrote a very simple method as you can see below:
+To get the last 3 months, I wrote a very simple method:
 
 ```php
 private function getLastMonths(int $monthCount): array
