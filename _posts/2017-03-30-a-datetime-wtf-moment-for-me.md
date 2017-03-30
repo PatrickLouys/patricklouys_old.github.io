@@ -21,6 +21,7 @@ private function getLastMonths(int $monthCount): array
         $months[] = new Month($date->format('m'), $date->format('Y'));
 
     }
+
     return $months;
 }
 ```
@@ -41,6 +42,7 @@ private function getLastMonths(int $monthCount): array
         $date = $firstOfTheMonth->modify("-{$i} month");
         $months[] = new Month($date->format('m'), $date->format('Y'));
     }
+
     return $months;
 }
 ```
