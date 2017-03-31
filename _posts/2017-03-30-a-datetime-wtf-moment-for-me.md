@@ -15,7 +15,7 @@ To get the last 3 months, I wrote a very simple method:
 private function getLastMonths(int $monthCount): array
 {
     $months = [];
-    foreach (range(0, ($monthCount - 1)) as $i) {
+    for ($i = 0; $i < $monthCount; $i++) {
         $date = new DateTimeImmutable("-{$i} month");
         $months[] = new Month($date->format('m'), $date->format('Y'));
 
@@ -37,7 +37,7 @@ private function getLastMonths(int $monthCount): array
     $firstOfTheMonth = new DateTimeImmutable('first day of this month');
 
     $months = [];
-    foreach (range(0, ($monthCount - 1)) as $i) {
+    for ($i = 0; $i < $monthCount; $i++) {
         $date = $firstOfTheMonth->modify("-{$i} month");
         $months[] = new Month($date->format('m'), $date->format('Y'));
     }
